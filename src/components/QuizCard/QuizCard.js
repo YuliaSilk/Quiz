@@ -1,3 +1,10 @@
-export const QuizCard = () => {
-    return <div>QuizCard</div>
+export const QuizCard = ({ quiz: { topic, level, time, questions } }) => {
+    return <div>
+        <h2>{topic}</h2>
+        <div>
+            <p>Level: {level}</p>
+            <p>Time: {time} min</p>
+            <p>Questions: {questions}</p>
+        </div>
+    </div>
 }
